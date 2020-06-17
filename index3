@@ -1,0 +1,8 @@
+<html>
+    <head>
+        <title>Kelly CS50 Web Dev</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="index_css.css">
+    </head>
+    <body>
+</html>

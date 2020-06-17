@@ -1,0 +1,191 @@
+
+.info {
+	height: 50%;
+	width: 50%;
+	text-align: center;
+	margin-top:3%;
+	margin-right:25%;
+	margin-left:25%;
+	margin-bottom: 3%;
+	padding: 5%;
+}
+#title {
+	text-align: center;
+	font-size: 100px;
+	font-family: "Bebas Neue", Arial; 
+	font-stretch:3px;
+	margin:5px;
+}
+
+@media screen and (max-width:768px) {
+
+	#title::before {
+		content: "K A I";
+		font-weight: bold;
+		color:black;
+	}
+
+	#sub-title::before {
+		content:'K E L L Y';
+		font-size:15px;
+		font-stretch:10px;
+		color:black;
+	}
+}
+
+@media screen and (min-width:769px) {
+
+	#title::before {
+		content: "K E L L Y";
+		margin-bottom: 50px;
+		font-weight: bold;
+		color: black;
+	}
+
+	#sub-title::before {
+		content:'K A I L I';
+		font-size:20px;
+		font-stretch:10px;
+		color:black;
+	}
+}
+
+#sub-title {
+	text-align: center;
+	font-family: "Bebas Neue", Arial; 
+	font-stretch:10px;
+	margin:1px;
+
+}
+
+#sub-info{
+	display: inline-block;
+	padding:5px 40px 5px 0px;
+	margin: 10px 0px 5px 15px;
+}
+
+#list_info li {
+	list-style-type: none;
+	font-family:Calibri;
+	font-size: 20px;
+	margin: 10px;
+    /*position: relative;*/
+}
+
+#pages {
+	display: inline-block;
+	height:80px;
+	width:80%;
+	padding: 0px 15px 30px 25px;
+}
+
+.button {
+  border: none;
+  color: white;
+  width: 50%;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0px 0px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #5c5c5c; 
+  color: white; 
+}
+/*hover is a pseudo class - change based on the state */
+.button1:hover {
+  background-color: #f2abff;
+  color: white;
+}
+
+.button2 {
+  background-color: #5c5c5c; 
+  color: white; 
+}
+
+.button2:hover {
+  background-color: #3bc1ff;
+  color: white;
+}
+
+.button3 {
+	display: inline-block;
+	height:90px;
+	width:90px;
+	background-color: #5c5c5c; 
+	border: none;
+	color: white; 
+	border-radius: 50%;
+	margin:10px 15px 10px 15px;
+}
+/*hover is a pseudo class - change based on the state */
+.button3:hover {
+	background-color: #f5ff82;
+	color: black;
+}
+
+#bingo {
+	display: inline-block; 
+	text-align: center; 
+	padding-top:20px;
+	margin: 30px 15px 10px 15px;
+	background-image:url('background3.png');
+	background-repeat: no-repeat;
+	background-size: 880px 370px;
+	background-position:28% 100%;
+}
+
+table {
+	text-align: center;
+	display: inline-block;
+	font-family: "Bebas Neue", Arial;
+	margin-top:30px;
+/*				margin:10px;
+	width:500px;
+	height:200px;*/
+}
+/*margin are outside of the box
+padding are inside the box*/
+th{
+	/*background-color: #57b1ff;*/
+	border-collapse: collapse;
+	padding:10px;
+}
+
+#fill th, td{
+	/*border: 1px dotted grey;*/
+	height:10px;
+	width:30%;
+	padding:10px;
+}
+
+.center {
+  display: inline-block;
+  /*margin-right:5%;*/
+  width: 50%;
+}
+
+.tooltip{ 
+    display: none; 
+    position: absolute;  
+    z-index: 100; 
+    border: 1px; 
+    background-color: white; 
+    border: 1px solid green; 
+    padding: 3px; 
+    color: green;  
+    top: 20px;  
+    left: 20px; 
+} 
+.parentCell:hover span.tooltip{ 
+    display:block; 
+} 
+
+#GFG { 
+text-decoration: none; 
+} 

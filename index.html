@@ -1,0 +1,81 @@
+<!-- Alright, now it’s time to make your website your own. Design a personal webpage about yourself, one of your interests, or any other topic of your choice. The subject matter, look and feel, and design of the site are entirely up to you, subject to the following requirements:
+
+Your website must contain at least four different .html pages, and it should be possible to get from any page on your website to any other page by following one or more hyperlinks.
+Your website must include at least one list (ordered or unordered), at least one table, and at least one image.
+Your website must have at least one stylesheet file.
+Your stylesheet(s) must use at least five different CSS properties, and at least five different types of CSS selectors. You must use the #id selector at least once, and the .class selector at least once.
+Your stylesheet(s) must include at least one mobile-responsive @media query, such that something about the styling changes for smaller screens.
+You must use Bootstrap 4 on your website, taking advantage of at least one Bootstrap component, and using at least two Bootstrap columns for layout purposes using Bootstrap’s grid model.
+Your stylesheets must use at least one SCSS variable, at least one example of SCSS nesting, and at least one use of SCSS inheritance.
+In README.md, include a short writeup describing your project, what’s contained in each file, and (optionally) any other additional information the staff should know about your project.
+ -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kelly CS50 Web Dev</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="index_css.css">
+    </head>
+    <body>
+    	<div class="info">
+    		<h1 id='title'></h1>
+    		<h3 id='sub-title'></h3>
+	    	<div id="sub-info">
+	    		<ul id='list_info'>
+	    			<li>Hi, I'm a Data Analyst from Singapore </li>
+	    			<li><form>
+					<input class="button button1" type="button" value="Github" onclick="window.location.href='https://github.com/MEGATHRUST123'" />
+					</form></li>
+					<li><form>
+					<input class="button button2" type="button" value="LinkedIn" onclick="window.location.href='https://www.linkedin.com/in/kellytay1/'" />
+					</form></li>
+	    		</ul>
+	    	</div> 
+
+	    	<div id='pages'>
+	    		<!--create buttons to 3 other html-->
+	    		<div >
+	    			<input class="col-sm-4 button3" type="button" value="Projects" onclick="window.location.href='index2.html'"/>
+	    		</div>
+	    		<div>
+	    			<input class="col-sm-4 button3" type="button" value="Travel" onclick="window.location.href='index3.html'"/>
+	    		</div>
+	    		<div>
+	    			<input class="col-sm-4 button3" type="button" value="Random" onclick="window.location.href='index4.html'"/>
+	    		</div>
+	    	</div>
+	    	<!-- Create table -->
+	    	<div id='bingo'>
+	    		<img src="B I N G O.png" class="center" style="display: inline-block;">
+	    		<h5 class='sub-title'>More about me</h5>
+	    		<table>
+	    			<!-- table row -->
+	    			<tr>
+	    				<th id='fill'>Interests</th>
+	    				<th id='fill'>Hobbies</th>
+	    				<th id='fill'>Random<br>Stuff</th>
+	    			</tr>
+	    			<tr>
+	    				<td id='fill'><a id='GFG' title="Medium Articles, Technical books, crime novels"> Read </a></td>
+	    				<td id='fill'><a id='GFG' title="Inspired by the many cooking shows I've binged on"> Attempting<br>to cook</a></td>
+	    				<td id='fill'><a id='GFG' title="Seven, Primal Fear, Memento">Thriller</a></td>
+	    			</tr>
+	    			<tr>
+	    				<td id='fill'><a id='GFG' title="Analytics, Machine Learning, Web Development">Learn</a></td>
+	    				<td id='fill'>Doodle</td>
+	    				<td id='fill'>Rick &<br>Morty</td>
+	    			</tr>
+	    			<tr>
+	    				<td><a id='GFG' title="R, Python, SQL">Code</a></td>
+	    				<td>Yoga</td>
+	    				<td>Pocket<br>Camp</td>
+	    			</tr>
+	    		</table>
+	    	</div>
+	    </div>
+	    <!-- Include JQuery from the Google CDN --> 
+	    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	    <!-- Include the RenderedFont rendering engine (using the #free account key) -->
+	    <script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
+    </body>
+</html>
